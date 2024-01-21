@@ -4,6 +4,8 @@ import Home from '@/views/Home.vue'
 import Tool from '@/modules/tool/components/Tabs.vue'
 import Login from '@/views/Login.vue'
 import Error404 from '@/views/404.vue'
+import TestSample from '@/views/TestSample.vue'
+import Receiver from '@/views/Receiver.vue'
 
 export const Routes = {
   LOGIN: '/Login',
@@ -20,6 +22,19 @@ export const Routes = {
 // }
 
 const routes = [
+  {
+    path: '/TestSample',
+    name: 'TestSample',
+    component: TestSample,
+    // beforeEnter: authGuard.Home
+  },
+  {
+    path: '/path/to/receiver',
+    name: 'Receiver',
+    component: Receiver,
+    // beforeEnter: authGuard.Home
+  },
+
   {
     path: '/',
     name: 'Home',
